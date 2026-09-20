@@ -1,0 +1,38 @@
+{
+	"name": "@netgarden/svelte-datatables",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "vite dev",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json"
+	},
+	"files": [
+		"src/lib"
+	],
+	"sideEffects": false,
+	"svelte": "./src/lib/index.ts",
+	"types": "./src/lib/index.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./src/lib/index.ts",
+			"svelte": "./src/lib/index.ts"
+		}
+	},
+	"peerDependencies": {
+		"svelte": "^5.0.0"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^4.0.0",
+		"@sveltejs/kit": "^2.16.0",
+		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"svelte": "^5.0.0",
+		"typescript": "^5.3.2",
+		"vite": "^6.2.5",
+		"svelte-check": "^4.0.0"
+	},
+	"keywords": [
+		"svelte"
+	],
+	"description": "Bootstrap/Svelte 5 server-side datatable (paging, sorting, filters) matching maf/datatables."
+}
