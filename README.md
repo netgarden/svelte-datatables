@@ -17,3 +17,7 @@ onMount(() => table.load());
 
 Consume via `"@netgarden/svelte-datatables": "file:../../svelte-datatables"`. There is no
 build step; apps compile the sources (SvelteKit apps may need `server.fs.allow` in dev).
+
+## License
+
+Apache License 2.0, see [LICENSE](LICENSE).
